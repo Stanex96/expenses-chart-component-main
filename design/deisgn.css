@@ -1,0 +1,243 @@
+:root {
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+@font-face {
+    font-family: DMsans;
+    src: url(../fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: DMSans;
+    gap: 2rem;
+    height: 100vh;
+}
+
+.header {
+    width: 700px;
+    height: 150px;
+    background-color: var(--Soft-red);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.headerInfos, .footerInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    color: var(--Very-pale-orange);
+}
+
+.headerInfos { color: var(--Very-pale-orange);}
+.footerInfos { color: var(--Dark-brown); }
+
+#headerText {
+    margin-bottom: 0.5rem;
+}
+
+#balance {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    margin-right: 2rem;
+}
+
+.container {
+    width: 700px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: var(--Very-pale-orange);
+    color: var(--Dark-brown);
+}
+
+h1 {
+    margin-left: 2rem;
+    margin-bottom: 6rem;
+}
+
+.daysWeek, .cases {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.daysWeek { align-items: center; color: var(--Medium-brown); }
+.cases { align-items: end; }
+
+.daysWeek p {
+    width: 75px;
+    text-align: center;
+}
+
+.case {
+    width: 75px;
+    height: 75px;
+    background-color: var(--Soft-red);
+    border-radius: 7.5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.case:hover {
+    opacity: 0.5;
+}
+
+#case2 { height: 150px; }
+#case3 { height: 225px; background-color: var(--Cyan); }
+#case4 { height: 135px; }
+#case5 { height: 100px; }
+#case6 { height: 175px; }
+#case7 { height: 115px; }
+
+hr {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: 1px solid var(--Cream);
+}
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerInfos, .footerPercentage { line-height: 1rem; height: 100%; }
+
+.footerPercentage {
+    text-align: right;
+    margin-right: 2rem;
+}
+
+#month { 
+    margin-top: 0.3rem;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#percentage {
+    font-weight: bold;
+    font-size: 20px;
+}
+.brown { color: var(--Medium-brown); }
+
+.attribution, .attribution a {
+    font-weight: bold;
+    color: var(--Dark-brown);
+    font-size: 12.5px;
+    transition: color 0.3s ease;
+}
+
+.attribution a:hover {
+    color: var(--Soft-red);
+}
+
+@media (min-width: 350px) and (max-width: 750px) {
+    body {
+        gap: 1rem;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .header {
+        width: 90%;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .headerInfos, .footerInfos {
+        margin-left: 1rem;
+    }
+
+    #balance {
+        font-size: 24px;
+    }
+
+    .logo {
+        margin-right: 1rem;
+    }
+
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 1.5rem 0;
+    }
+
+    h1 {
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+        font-size: 24px;
+    }
+
+    .daysWeek, .cases {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .daysWeek p {
+        width: 40px;
+        font-size: 14px;
+    }
+
+    .case {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #case2 { height: 80px; }
+    #case3 { height: 120px; }
+    #case4 { height: 72px; }
+    #case5 { height: 53px; }
+    #case6 { height: 93px; }
+    #case7 { height: 61px; }
+
+    hr {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .footerContainer {
+        flex-direction: row;
+    }
+
+    .footerInfos {
+        margin-bottom: 1rem;
+    }
+
+    .footerPercentage {
+        margin-right: 1rem;
+    }
+
+    #month {
+        font-size: 32px;
+    }
+
+    #percentage {
+        font-size: 16px;
+    }
+
+    .attribution {
+        text-align: center;
+        font-size: 10px;
+    }
+}
