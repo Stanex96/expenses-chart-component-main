@@ -21,7 +21,6 @@ body {
     font-size: 18px;
     font-family: DMSans;
     gap: 2rem;
-    height: 150vh;
 }
 
 .header {
@@ -30,6 +29,7 @@ body {
     background-color: var(--Soft-red);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-radius: 20px;
 }
 
@@ -59,7 +59,6 @@ body {
     margin-right: 2rem;
     max-width: calc(166.5px / 2.5);
     max-height: calc(111px / 2.5);
-    margin-top: 2rem;
 }
 
 .container {
