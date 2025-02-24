@@ -57,6 +57,8 @@ body {
 
 .logo {
     margin-right: 2rem;
+    width: calc(166.5px / 2);
+    height: calc(111px / 2);
 }
 
 .container {
